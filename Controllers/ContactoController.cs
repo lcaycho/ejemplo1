@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using petclinic.Models;
+
 
 namespace petclinic.Controllers
 {
@@ -21,6 +23,13 @@ namespace petclinic.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Contacto objContacto)
+        {
+            ViewData["Message"] = string.Concat("Estimado " , objContacto.Name, " te estaremos contactando pronto.");
+            return View("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

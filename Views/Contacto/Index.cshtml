@@ -1,35 +1,30 @@
 @model Contacto
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Contacto</title>
-</head>
-<body>
-    <h1>Contacto</h1>
-    
-    <form method="post" action="/Controlador/EnviarContacto">
-        <div>
-            <label for="Name">Nombre:</label>
-            <input type="text" id="Name" name="Name" value="@Model.Name" />
+@{
+    ViewData["Title"] = "Contactame";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-center">
+    <form asp-controller="Contacto" asp-action="Create">
+        <div class="form-group">
+            <label asp-for="Name">Nombre:</label>
+            <input asp-for="Name" class="form-control" />
         </div>
-        
-        <div>
-            <label for="Email">Correo electrónico:</label>
-            <input type="email" id="Email" name="Email" value="@Model.Email" />
+        <div class="form-group">
+            <label asp-for="Email">Email:</label>
+            <input asp-for="Email" class="form-control" />
         </div>
-        
-        <div>
-            <label for="Phone">Teléfono:</label>
-            <input type="text" id="Phone" name="Phone" value="@Model.Phone" />
+        <div class="form-group">
+            <label asp-for="Phone">Teléfono:</label>
+            <input asp-for="Phone" class="form-control" />
         </div>
-        
-        <div>
-            <label for="Question">Pregunta:</label>
-            <textarea id="Question" name="Question">@Model.Question</textarea>
+        <div class="form-group">
+            <label asp-for="Question">Pregunta:</label>
+            <input asp-for="Question" class="form-control" />
         </div>
-        
-        <button type="submit">Enviar</button>
-    </form> 
-</body>
-</html>
+        <button type="submit" class="btn btn-primary">Enviar Consulta</button>
+    </form>
+    <h1>@ViewData["Message"]</h1>
+</div>
