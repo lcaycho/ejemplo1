@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\CAYCHO\\PROGRAMACION\\petclinic\\petclinic.csproj": {}
+    "D:\\CAYCHO\\PROGRAMACION\\petclinic\\petclinic.csproj": {}
   },
   "projects": {
-    "d:\\CAYCHO\\PROGRAMACION\\petclinic\\petclinic.csproj": {
+    "D:\\CAYCHO\\PROGRAMACION\\petclinic\\petclinic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\CAYCHO\\PROGRAMACION\\petclinic\\petclinic.csproj",
+        "projectUniqueName": "D:\\CAYCHO\\PROGRAMACION\\petclinic\\petclinic.csproj",
         "projectName": "petclinic",
-        "projectPath": "d:\\CAYCHO\\PROGRAMACION\\petclinic\\petclinic.csproj",
+        "projectPath": "D:\\CAYCHO\\PROGRAMACION\\petclinic\\petclinic.csproj",
         "packagesPath": "C:\\Users\\derr6\\.nuget\\packages\\",
-        "outputPath": "d:\\CAYCHO\\PROGRAMACION\\petclinic\\obj\\",
+        "outputPath": "D:\\CAYCHO\\PROGRAMACION\\petclinic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\derr6\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -51,13 +51,13 @@
               "target": "Package",
               "version": "[7.0.9, )"
             },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[7.0.9, )"
-            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[7.0.9, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.4, )"
             }
           },
           "imports": [
